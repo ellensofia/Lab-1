@@ -7,9 +7,10 @@
 }
 
 /**
- * Get elements from HTML document and assigns a variable name
+ * Get elements from HTML document and assign them variable names
  */
 function getElementsFromDOM() {
+
     button = document.querySelector('.btn');
     option1 = document.querySelector('.option-1');
     option2 = document.querySelector('.option-2');
@@ -89,7 +90,8 @@ function start() {
 
 /**
  * @param {number} index is the index number of the array 
- * Function that 
+ * Function that passes the index number from getStates and loads 
+ * commonThingsFunction and loadSpecificThingsForScene functions.
  */
 function updateContentForScene(index) {
     loadCommonThings(index);
@@ -97,6 +99,10 @@ function updateContentForScene(index) {
 }
 
 /**
+ * Function that gets a copy of getStates array with the different scenes of the game.
+ * Every scene contains a title, text and some form of media (images or video)
+ * Most scenes also contains two option buttons that lets the user load a new scene.
+ * When the user clicks on a button the updateContentForScene function is called.
  * 
  * @param {number} index number of the array
  */
@@ -122,7 +128,7 @@ function loadCommonThings(index) {
 } 
 
 /**
- * 
+ * Function that calls enScene or displayImg depending on the index number
  * @param {number} index number of the array
  */
 function loadSpecificThingsForScene(index) {
