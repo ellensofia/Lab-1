@@ -1,12 +1,11 @@
 /**
- * Global variable that stores username input
+ * @type {string} Global variable that stores username input
  */
 let userName;
 
 /**
- * 
- * @returns Array with objects containing states with text and media content, 
- *          as well as text and direction for buttons.
+ * Function that contains all states of the game
+ * @returns {Array<object>} - containing states with text and media content, as well as text and direction for buttons.
  */
 function getStates() {
     return [

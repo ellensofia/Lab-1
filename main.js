@@ -82,15 +82,16 @@ function start() {
     // Display option buttons
     option1.classList.remove('invisible');
     option2.classList.remove('invisible');
+    // Display video
     video.classList.remove('opacity');
     
     updateContentForScene(0)
 }
 
 /**
- * @param {number} index is the index number of the array 
- * Function that passes the index number from getStates and loads 
- * commonThingsFunction and loadSpecificThingsForScene functions.
+ * Function that passes the index number from getStates
+ * calls commonThingsFunction and loadSpecificThingsForScene.
+ * @param {number} index is the index number of the array of states 
  */
 function updateContentForScene(index) {
     loadCommonThings(index);
@@ -103,13 +104,14 @@ function updateContentForScene(index) {
  * Most scenes also contains two option buttons that lets the user load a new scene.
  * When the user clicks on a button the updateContentForScene function is called.
  * 
- * @param {number} index number of the array
+ * @param {Number} index - number of the array
  */
 function loadCommonThings(index) {
 
     // Get new copy of getStates array
     const states = getStates();
 
+    // change the text content of html element connected to variable
     title.textContent = states[index].title;
     text.textContent = states[index].message;
     option1.textContent = states[index].option1;
@@ -117,28 +119,30 @@ function loadCommonThings(index) {
     video.src = states[index].video;
     img.src = states[index].img;
     
+    // Variable change the value depending on the current index
     const option1NextState = states[index].option1NextState;
     const option2NextState = states[index].option2NextState;
     
+    // The option button calls a different function depending on current index
     option1.addEventListener('click', () => updateContentForScene(option1NextState))
     option2.addEventListener('click', () => updateContentForScene(option2NextState))
 
 } 
 
 /**
- * Function that calls enScene or displayImg depending on the index number
+ * Function that ether removes option buttons and/or displays image
+ * calls displayImg or endScene depending on index number
  * @param {number} index number of the array
  */
 function loadSpecificThingsForScene(index) {
 
-    if (index == 10 || index == 11 || index == 12) {
+    if (index == 10 || index == 11 || index == 12 || index == 13) {
         endScene();
     }
 
     if(index == 9) {
         displayImg();
     }
-
 }
 
 /**
