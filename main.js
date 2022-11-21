@@ -34,7 +34,6 @@ function addEventlisteners(){
     button.addEventListener('click', getUserName);
     input.addEventListener('keypress', function(event) {
         if(event.key === "Enter") {
-            console.log("keypress active")
             getUserName();
         }
     });
@@ -117,7 +116,6 @@ function loadCommonThings(index) {
     option2.textContent = states[index].option2;
     video.src = states[index].video;
     img.src = states[index].img;
-    console.log(index)
     
     const option1NextState = states[index].option1NextState;
     const option2NextState = states[index].option2NextState;
