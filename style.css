@@ -91,7 +91,7 @@ button:hover {
     color:#2b2b2b;
 }
 
-.btns{
+.btns {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
@@ -124,7 +124,6 @@ input {
 
 @media screen and (max-width: 525px) {
 
-
     input {
         width: 55vw;
     }
@@ -133,6 +132,5 @@ input {
         padding: 1rem;
         text-align: center;
     }
-
 
 }
