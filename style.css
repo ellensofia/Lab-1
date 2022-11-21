@@ -115,7 +115,7 @@ input {
 #text {
     margin: 0;
     font-size: 1.2rem;
-    max-width: 70vw;
+    max-width: 55vw;
 }
 
 .invisible {
@@ -126,6 +126,10 @@ input {
 
     input {
         width: 55vw;
+    }
+
+    #text {
+        max-width: 75vw;
     }
 
     .container {
