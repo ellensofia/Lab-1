@@ -143,8 +143,8 @@ function getStates() {
 
         {
             id: 13, 
-            title: 'Theo was at a party',
-            message: "You follow them to a party where theo is at. He is all dressed up an you are impressed.",
+            title: 'You follow the ghosts to a halloween party',
+            message: "At the party you spot Theo. He is dressed in a nice lion costume and you are impressed.",
             img: "assets/images/lion.png",
         },
     ];
