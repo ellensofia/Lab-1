@@ -68,7 +68,7 @@ function getStates() {
         {
             id: 5,
             title: 'Go home',
-            message: "You walk home, the rain is puring. But then you hear something rustle from a pile of leaves nearby",
+            message: "You walk home, the rain is pouring. But then you hear something rustle from a pile of leaves nearby",
             option1: 'Find out what it is',
             option1NextState: 12,
             option2: "Keep walking",
@@ -89,13 +89,13 @@ function getStates() {
         
         {
             id: 7,
-            title: 'Walking',
-            message: 'You walk in the woods. You hear music from somewhere far away as well as a noise coming from a pile of leaves.' ,
-            option1: 'Go towards the music',
-            option1NextState: 10,
-            option2: 'Look among the leaves',
+            title: 'Ghosts',
+            message: 'You walk through woods and enter a field. There you see three ghosts. Do you run back to the woods and hide or do you follow them?' ,
+            option1: 'Follow them',
+            option1NextState: 13,
+            option2: 'Run and hide under a pile of leaves',
             option2NextState: 12,
-            video: "assets/video/walk2.mp4",
+            video: "assets/video/ghosts.mp4",
         },
 
         {
@@ -139,6 +139,13 @@ function getStates() {
             title: 'You found him!!',
             message: "That was quick " + userName + ". Theo was hiding in the pile of leaves. He is shivering so you put your jacket arond him.",
             img: "assets/images/dog-rain.jpg",
+        },
+
+        {
+            id: 13, 
+            title: 'Theo was at a party',
+            message: "You follow them to a party where theo is at. He is all dressed up an you are impressed.",
+            img: "assets/images/lion.png",
         },
     ];
 }
