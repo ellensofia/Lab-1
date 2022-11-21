@@ -51,7 +51,7 @@ function getStates() {
             option1NextState: 12,
             option2: 'Run away',
             option2NextState: 8,
-            video: "assets/video/bicycle.mp4",
+            video: "assets/video/bicycle.mov",
         },
 
         {
@@ -106,7 +106,7 @@ function getStates() {
             option1NextState: 12,
             option2: 'Go home',
             option2NextState: 5,
-            video: "assets/video/walk.mp4",
+            video: "assets/video/walk.mov",
         },
         
         {
