@@ -6,6 +6,9 @@
     getElementsFromDOM();
 }
 
+/**
+ * Get elements from HTML document and assigns a variable name
+ */
 function getElementsFromDOM() {
     button = document.querySelector('.btn');
     option1 = document.querySelector('.option-1');
@@ -19,6 +22,9 @@ function getElementsFromDOM() {
     img = document.querySelector('img');
 }
 
+/**
+ * Connects input field and button to function
+ */
 function addEventlisteners(){
 
     getElementsFromDOM();
@@ -35,9 +41,7 @@ function addEventlisteners(){
 
 /**
  * Gets input from user and stores it in the variable userName
- * 
  */
-
 function getUserName() {
     // Assign userName the value of inputfield
     userName = input.value;
@@ -66,7 +70,7 @@ function removeInputField() {
     input.classList.add('invisible');
     button.classList.add('invisible');
 
-    // call changeStartText function in one second
+    // Call start function in one second
     setTimeout(start, 1000);
 }
 
@@ -87,12 +91,15 @@ function start() {
  * @param {number} index is the index number of the array 
  * Function that 
  */
-
 function updateContentForScene(index) {
     loadCommonThings(index);
     loadSpecificThingsForScene(index);
 }
 
+/**
+ * 
+ * @param {number} index number of the array
+ */
 function loadCommonThings(index) {
 
     // Get new copy of getStates array
@@ -114,6 +121,10 @@ function loadCommonThings(index) {
 
 } 
 
+/**
+ * 
+ * @param {number} index number of the array
+ */
 function loadSpecificThingsForScene(index) {
 
     if (index == 10 || index == 11 || index == 12) {
@@ -126,18 +137,25 @@ function loadSpecificThingsForScene(index) {
 
 }
 
+/**
+ * Shows the background image and removes option buttons
+ * Calls removeBtn and displayImg
+ */
 function endScene() {
-    console.log("slutscen");
     removeBtns();
     displayImg();
 }
 
-// Remove display-none class from images
+/** 
+ * Remove display-none class from images
+ */
 function displayImg() {
     img.classList.remove('display-none');
 }
 
-// Remove option buttons
+/** 
+ * Add invisible class to option buttons
+ */
 function removeBtns() {
     option1.classList.add('invisible');
     option2.classList.add('invisible');

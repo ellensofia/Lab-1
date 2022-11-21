@@ -1,5 +1,5 @@
 /**
- * 
+ * Global variable that stores username input
  */
 let userName;
 
