@@ -82,6 +82,7 @@ function start() {
     // Display option buttons
     option1.classList.remove('invisible');
     option2.classList.remove('invisible');
+
     // Display video
     video.classList.remove('opacity');
     
@@ -118,14 +119,16 @@ function loadCommonThings(index) {
     option2.textContent = states[index].option2;
     video.src = states[index].video;
     img.src = states[index].img;
+    console.log(index)
     
     // Variable change the value depending on the current index
     const option1NextState = states[index].option1NextState;
     const option2NextState = states[index].option2NextState;
+
     
     // The option button calls a different function depending on current index
-    option1.addEventListener('click', () => updateContentForScene(option1NextState))
-    option2.addEventListener('click', () => updateContentForScene(option2NextState))
+    option1.onclick = () => updateContentForScene(option1NextState);
+    option2.onclick = () => updateContentForScene(option2NextState);
 
 } 
 
