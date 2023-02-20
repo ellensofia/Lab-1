@@ -119,7 +119,6 @@ function loadCommonThings(index) {
     option2.textContent = states[index].option2;
     video.src = states[index].video;
     img.src = states[index].img;
-    console.log(index)
     
     // Variable change the value depending on the current index
     const option1NextState = states[index].option1NextState;
