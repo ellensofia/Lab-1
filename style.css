@@ -125,7 +125,12 @@ input {
 @media screen and (max-width: 525px) {
 
     input {
-        width: 55vw;
+        width: 52vw;
+        margin-right: 0.2rem;
+    }
+
+    .user-input {
+        margin:0;
     }
 
     #text {
@@ -137,4 +142,12 @@ input {
         text-align: center;
     }
 
+    button {
+        padding: 1rem 1.2rem;
+        font-size: 0.8rem;
+    }
+
+    .btns {
+        gap: 0.2rem;
+    }
 }

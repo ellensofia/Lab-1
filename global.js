@@ -15,7 +15,7 @@ function getStates() {
             message: `You come home one day to find your bedroom window open. You look around. Everything seems to be in place but you realize that your dog Theo is missing. He must have climbed out of the window - typical Theo. What do you do ` + userName + '?',
             option1: 'Go look for him',
             option1NextState: 2,
-            option2: 'Call out from the window',
+            option2: 'Call from the window',
             option2NextState: 1,
             video: "assets/video/file.mov",
         },
@@ -92,7 +92,7 @@ function getStates() {
             message: 'You walk through woods and enter a field. There you see three ghosts. Do you run back to the woods and hide or do you follow them?' ,
             option1: 'Follow them',
             option1NextState: 13,
-            option2: 'Run and hide under a pile of leaves',
+            option2: 'Run and hide',
             option2NextState: 12,
             video: "assets/video/ghosts.mov",
         },
@@ -143,7 +143,7 @@ function getStates() {
         {
             id: 13, 
             title: 'You follow the ghosts to a halloween party',
-            message: "At the party you spot Theo. He is dressed in a nice lion costume and you are impressed.",
+            message: "At the party you spot Theo. He is dressed in a nice lion costume and you are obviously impressed.",
             img: "assets/images/lion.png",
         },
     ];
