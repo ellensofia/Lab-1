@@ -17,7 +17,7 @@ function getStates() {
             option1NextState: 2,
             option2: 'Call out from the window',
             option2NextState: 1,
-            video: "assets/video/file.mp4",
+            video: "assets/video/file.mov",
         },
 
         {
@@ -72,7 +72,7 @@ function getStates() {
             option1NextState: 12,
             option2: "Keep walking",
             option2NextState: 7,
-            video: "assets/video/video.mp4",
+            video: "assets/video/video.mov",
         },
         
         {
@@ -94,7 +94,7 @@ function getStates() {
             option1NextState: 13,
             option2: 'Run and hide under a pile of leaves',
             option2NextState: 12,
-            video: "assets/video/ghosts.mp4",
+            video: "assets/video/ghosts.mov",
         },
 
         {
